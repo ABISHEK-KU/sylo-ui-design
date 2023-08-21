@@ -1,0 +1,5 @@
+.mainView{
+width:100vw;
+height: calc(80vh - 20px);
+overflow-x:hidden;
+}

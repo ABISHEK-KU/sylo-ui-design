@@ -1,0 +1,64 @@
+
+.occasionMain {
+  padding-left: 10px;
+  margin-top: 20px;
+}
+
+.occasionSlider {
+  margin-top: 40px;
+}
+
+.occasionSlider > .slick-slide {
+  width: 100px !important;
+}
+
+.occasion-centered-image {
+  object-fit: contain;
+}
+
+.occasion-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: margin 0.3s;
+}
+
+.occasionTitle {
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .occasion-item {
+    width: 90% !important;
+    margin: 0px;
+  }
+
+  .occasion-centered-image {
+    max-width: 95%;
+    max-height: 95%;
+  }
+
+  .occasion-rounded-image {
+    border-radius: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .occasion-item {
+    width:100% !important;
+  }
+  .occasion-centered-image {
+    width: 100%;
+    height:auto;
+  }
+
+  .occasion-rounded-image {
+    border-radius: 15px;
+  }
+
+  .occasionTitle {
+    font-size:10px;
+    font-weight:bold;
+  }
+}

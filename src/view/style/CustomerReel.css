@@ -1,0 +1,96 @@
+
+.customerReelCont {
+    text-align: center;
+    padding: 2rem 0;
+  }
+.customerReelHeader{
+    font-weight: bolder;
+    font-size: larger;
+    text-align: center;
+}
+
+.highlightText{
+    background:linear-gradient(15deg, #880088, #aa2068, #cc3f47, #de6f3d, #f09f33, #de6f3d, #cc3f47, #aa2068, #880088) no-repeat;
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+  .video-player {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+  }
+  
+  .reel-container {
+    position: relative;
+    border: 3px solid #cf4f8e;
+    border-radius: 20px;
+    width:171px;
+    height:300px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    border-color:linear-gradient(15deg, #880088, #aa2068, #cc3f47, #de6f3d, #f09f33, #de6f3d, #cc3f47, #aa2068, #880088) no-repeat; ;
+  }
+  .video-wrapper{
+    padding: 3px;
+  }
+  .video-player {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 50px;
+  }
+  
+  /* Set the icon's pointer-events to none */
+  .play-button i {
+    pointer-events: none;
+  }
+   /* mobile */
+  @media (max-width: 600px) {
+    .reel-container{
+        height: 250px !important;
+    }
+  }
+  .reelSlider .slick-list {
+    height:255px !important;
+  }
+  .reelSlider .slick-track {
+    width:100% !important;
+    height:255px !important;
+    margin:0 10px !important;
+  }
+  .reelSlider .slick-slide{
+    margin: 0 10px 0 10px;
+  }
+  /* for laptop and desktop */
+  @media (min-width: 768px) {
+    .reel-container{
+        height: 500px !important;
+    }
+    .reelSlider .slick-track {
+        height: 800px !important;
+        width:100% !important;
+        margin:0 10px !important;
+      }
+    .reelSlider .slick-slide{
+       width:300px !important;
+       height:600px !important;
+    }
+    .reelSlider .slick-list{
+        height:520px !important;
+     }
+  }

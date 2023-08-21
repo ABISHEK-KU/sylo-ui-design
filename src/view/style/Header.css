@@ -1,0 +1,17 @@
+.header{
+    min-height: 10vh;
+    margin-top: 0;
+    margin-left: 0;
+    background-color:#fff;
+    padding: 0;
+}
+@media (max-width:320px){
+    .header{
+      min-height:5vh !important;
+    }
+  }
+  @media (max-width:600px){
+    .header{
+      min-height:5vh !important;
+    }
+  }

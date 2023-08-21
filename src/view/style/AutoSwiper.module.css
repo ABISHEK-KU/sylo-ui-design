@@ -1,0 +1,57 @@
+
+.autoSwipercontainer {
+  margin-top: 20px;
+}
+
+.sliderItem{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.centeredImage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.customDot{
+  width:9px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #828282;
+  transition: background-color 0.3s;
+  margin-left: 10px;
+  margin-top: 10px !important;
+}
+.activeDot{
+  width:9px;
+  height: 10px;
+  margin-top: 10px !important;
+  transition: all .3s ease-in;
+  padding-right:15px;
+  padding-left:10px;
+  background-color: #3b00af;
+  border-radius: 20px;
+  --_p: 0%;
+  --_i: 1;
+}
+
+@media (min-width: 768px) {
+  .centeredImage{
+    width: 80%;
+  }
+  .roundedImage {
+    border-radius: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .centeredImage{
+    width: 95%;
+  }
+  .roundedImage {
+    border-radius:30px;
+  }
+}

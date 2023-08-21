@@ -1,0 +1,98 @@
+.budgetMain{
+    padding-bottom: 20px;
+}
+.budgetTitle{
+    font-size:large;
+    font-weight: bolder;
+    margin-left:10px;
+}
+
+.budgetListCont{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    flex:1,1,auto;
+    gap: 16px;
+}
+.budgetCard{
+    display: flex;
+    width:25%;
+    height:105px;
+    background-color: rgb(222, 222, 222);
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.imageContainerVenue{
+    margin-top:-10px;
+    width:60%;
+    height:120px;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+.VenueImage{
+   width:100%;
+   height:100%;
+   border-radius: 20px;
+   top:-1px;
+}
+.venueSelectButton{
+    position: relative;
+    width:90%;
+    height:33px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    padding: 1.2em 1rem;
+    cursor: pointer;
+    gap: 0.4rem;
+    font-weight:bold;
+    border-radius: 30px;
+    text-shadow: 2px 2px 3px rgb(136 0 136 / 50%);
+    background: linear-gradient(15deg, #880088, #aa2068, #cc3f47, #de6f3d, #f09f33, #de6f3d, #cc3f47, #aa2068, #880088) no-repeat;
+    background-size: 300%;
+    color: #fff;
+    border: none;
+    background-position: left center;
+    box-shadow: 0 30px 10px -20px rgba(0,0,0,.2);
+    left: 50%;
+    top:-31px;
+    transform: translateX(-50%);
+    z-index: 1;
+    background-color: #ffffff;
+    text-align: center;
+}
+.like-button {
+    position: relative;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    float: right;
+    top:-145px;
+    border-radius: 50px;
+  }
+/* laptop and desktop */
+@media (min-width: 768px) {
+    .budgetCard {
+        width: 25%;
+        height:115px;
+    }
+    .imageContainerVenue {
+        width: 70%;
+        height: 130px;
+    }
+}
+ /* mobile */
+@media (max-width: 600px) {
+    .budgetCard { 
+        width: 90%;
+    }
+    .like-button {
+        top:-135px;
+      }
+
+}
